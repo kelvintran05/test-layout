@@ -1,0 +1,98 @@
+.footer {
+    height: 240px;
+    background-image: url('../../../assets/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .logo-footer {
+        text-align: center;
+        img {
+            margin-top: 10px;
+        }
+    }
+    .footer-menu {
+        margin-top: 35px;
+        text-align: center;
+        a {
+            padding-left: 64px;
+            padding-right: 64px;
+            font-family: Avenir Next;
+            font-size: 14px;
+            line-height: 19px;/* identical to box height */
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    .copyright {
+        margin-top: 30px;
+        text-align: center;
+        font-family: Avenir Next;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+    .icon-coin1 {
+        position: absolute;
+        bottom: 40px;
+        left: 320px;
+        margin:-60px 0 0 -60px;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+    }
+    .icon-coin2 {
+        position: absolute;
+        bottom: 150px;
+        right: 100px;
+        overflow: hidden;
+        transition-duration: 0.8s;
+        transition-property: transform;
+        &:hover {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    .icon-card {
+        position: absolute;
+        bottom: 5px;
+        left: 550px;
+        -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+        animation: mymove 5s infinite;
+    }
+    .icon-z {
+        position: absolute;
+        top: 150px;
+        right: 350px;
+        -webkit-animation: zmove 5s infinite; /* Safari 4.0 - 8.0 */
+        animation: zmove 5s infinite;
+    }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes zmove {
+    from {right: 0px;}
+    to {right: 200px;}
+}
+  
+@keyframes zmove {
+    from {right: 0px;}
+    to {right: 200px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 200px;}
+}
+  
+@keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 200px;}
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

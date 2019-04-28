@@ -1,0 +1,94 @@
+.banner {
+    position: relative;
+	overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    
+    img {
+        width: 100%;
+    }
+    .caption{
+        position: absolute;
+		top: 50%;
+		width: 100%;
+		height: auto;
+		color: #fff;
+		z-index: 3;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        
+        .title {
+            font-family: Avenir Next;
+            font-size: 88px;
+            line-height: 120px;/* identical to box height */
+            letter-spacing: 0.733334px;
+            color: #FFFFFF;
+            text-shadow: 5px 5px 10px red;
+            margin-left: 113px;
+        }
+        .sub-title {
+            font-family: Avenir Next;
+            font-size: 88px;
+            line-height: 120px;/* identical to box height */
+            letter-spacing: 0.733334px;       
+            color: #FFFFFF;
+            text-shadow: 5px 5px 10px red;
+            margin-left: 113px;
+        }
+        .function {
+            margin-top: 76px;
+            display: inline-flex;
+            .line {
+                width: 123px;
+                height: 16px;
+                margin-left: 142px;
+                margin-top: 12px;
+                position: absolute;
+                transform: skew(-20deg);
+                background: #ED5C00;
+                opacity: 0.7;
+            }
+            .details {
+                width: 262px;
+                height: 70px;
+                transform: skew(-20deg);
+                background: #ED5C00;
+                margin-left: 182px;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 75px;
+                .title-details {
+                    font-family: Avenir Next;
+                    font-size: 24px;
+                    line-height: 33px;/* identical to box height */
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    background: none;
+                    border: none;
+                }
+                .icon-right  {
+                    margin-left: 20px;
+                    font-size: 24px;
+                }
+            }
+            .play {
+                margin-left: 50px;
+                margin-top: 20px;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+                .title-play {
+                    font-family: SF Pro Display;
+                    font-size: 15px;
+                    line-height: 18px;/* identical to box height */
+                    letter-spacing: -0.2px;
+                    color: #FFFFFF;
+                    margin-left: 8px;
+                    background: none;
+                    border: none;
+                }
+            }    
+        }
+    }
+}

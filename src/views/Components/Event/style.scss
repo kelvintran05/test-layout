@@ -1,0 +1,93 @@
+.event {
+    .react-tabs__tab--selected {
+        font-family: Avenir Next;
+        font-size: 24px;
+        line-height: 33px;/* identical to box height */
+        color: #222222 !important;
+        font-weight: bold !important;
+        border: none !important;
+        border-bottom: 3px solid #ED5C00 !important;
+    }
+    .react-tabs__tab {
+        font-family: Avenir Next;
+        font-size: 24px;
+        line-height: 33px;/* identical to box height */
+        color: #999999;
+        &:not(:first-child) {
+            margin-left: 80px;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		position: relative;
+		z-index: 1;
+        transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, transform 1s;   
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+    }
+    .image-event {
+        margin-bottom: 20px;
+    }
+    .view {
+        margin-top: 20px;
+        float: right;
+        font-family: Avenir Next;
+        font-size: 12px;
+        line-height: 20px;/* identical to box height, or 167% */
+        text-align: right;
+        letter-spacing: -0.15px;
+        color: #474747;
+        font-weight: bold;
+        border: none;
+    }
+    .no-padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card-event {
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin-top: 26px;
+        .descripton {
+            font-family: Avenir Next;
+            font-size: 18px;
+            line-height: 22px;/* or 122% */
+            text-align: center;
+            color: #222222;
+            font-weight: bold;
+            padding: 30px;
+            height: 126px;
+        }
+        .details {
+            font-family: Avenir Next;
+            font-size: 14px;
+            line-height: 19px;/* identical to box height */
+            text-align: center;
+            color: #C43911;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 75px;
+            .icon-right {
+                margin-left: 8px;
+                font-size: 24px;
+            }
+            .details-title {
+                border: none;
+                font-family: Avenir Next;
+                font-size: 14px;
+                line-height: 19px;/* identical to box height */
+                text-align: center;
+                color: #C43911;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 75px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
